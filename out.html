@@ -88,5 +88,14 @@
         document.getElementById("tim").innerHTML = m+"月"+d+"日"+" "+h+":"+min
 
 </script>
+<script>
+    var pdate = new Date()
+    pdate.setDate(pdate.getDate() - 1)
+    var pd = pdate.getDate();
+    pd = pd < 10 ? ('0' + pd) : pd;
+    document.getElementById("codtim").innerHTML = "最近一次核酸结果：2022-"+m+"-"+pd
+</script>   
+    
+    
 </html>
 
