@@ -75,6 +75,33 @@
         </div>
         <div style="width:100%;height:15px;background-color:#0614f8;" id="bian92c"></div>
         <hr  align="center" style="margin-bottom:3px;margin-top:3px;border:none;height:1px;background-color: #efeff0">
+        <div style="color:#007a19;background-color: #a1fbba;border-radius: 20px;float: left">
+            <p style="height:2px;margin-top: 3px"></p>
+            <p align="center" style="width:165px;height:40px;font-size:16px;font-weight:500;font-family:黑体">核酸检测结果<br /><span id="codtim"></span><span> 14:37</span></p>
+            <p style="height:2px;margin-top: 1px"></p>
+        </div>
+
+        <div style="color:#3669d8;background-color: #bdd4fa;border-radius: 20px;float: left;margin-left: 20px">
+            <p style="height:2px;margin-top: 3px"></p>
+            <p align="center" style="width:165px;height:40px;font-size:16px;font-weight:500;font-family:黑体">新冠疫苗接种 <br />3剂次</p>
+            <p style="height:2px;margin-top: 1px"></p>
+        </div>
+
+
+
+
+        <div style="float: left">
+            <p style="color:#00009d;width:165px;height:18px;margin-top: 0px;font-size:12px;text-align:center;" >郑好办防疫数据获取成功</p>
+        </div>
+
+        <div style="float: left;margin-left: 20px">
+            <p style="width:165px;height:18px;margin-top: 0px;font-size:12px;text-align: center;color:#00009d;" >定位河南省郑州附近<br /><span style="color: #367937">扫码在指定区域内</span></p>
+
+        </div>
+        
+        
+        
+        <hr  align="center" style="margin-bottom:3px;margin-top:3px;border:none;height:1px;background-color: #efeff0">
         <div style="width:100%;min-height:18px;line-height:18px;font-size:12px;color:#666;text-align:center">郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
         <div style="width:100%;height:18px;line-height:18px;font-size:12px;color:#666;text-align:center" id="msg11"></div>
     </div>
@@ -94,5 +121,14 @@
         document.getElementById("tim").innerHTML = m+"月"+d+"日"+" "+h+":"+min
 
 </script>
+    
+<script>
+    var pdate = new Date()
+    pdate.setDate(pdate.getDate() - 1)
+    var pd = pdate.getDate();
+    pd = pd < 10 ? ('0' + pd) : pd;
+    document.getElementById("codtim").innerHTML = "2022-"+m+"-"+pd
+</script>    
+    
 </html>
 
